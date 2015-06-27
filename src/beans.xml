@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
-        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
-<beans>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="shape1" class="com.vasu.spring.Triangle">
-		
-	</bean>
-	<bean id="myapp1" class="com.vasu.spring.MyApp" init-method="init()">
-		<property name="sh" ref="shape1"></property>
-	</bean>
+   <bean id="helloWorld" class="com.vasu.spring.HelloWorld">
+       <property name="message" value="Hello World!"/>
+   </bean>
 
 </beans>
